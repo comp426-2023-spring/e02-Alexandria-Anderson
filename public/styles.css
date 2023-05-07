@@ -1,8 +1,89 @@
 body {
+    background-color: #006d77;
+    text-align: center;
+    text-decoration-color: #ffddd2;
+    font-weight: 1000;
+}
+.btn-group button {
+    background-color: #edf6f9;
+    color:rgb(0, 0, 0);
+    padding: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 7px #043f45;
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    border: none;
+    
 }
 
+.main button{
+    background-color: #edf6f9;
+    color:rgb(0, 0, 0);
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 7px #043f45;
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    border: none;
+}
+
+.btn-group button:hover {
+    background-color: #e29578;
+    color:#edf6f9
+}
+
+.main button:hover {
+    background-color: #e29578;
+    color:#edf6f9
+}
+
+.rules button {
+    background-color: #006d77;
+    border: none;
+    color:#edf6f9;
+    padding: 5px 30px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    
+}
+.rules button:hover {
+    background-color: #e29578;
+    color:rgb(0, 0, 0);
+}
+.gap-30{
+    width: 100%;
+    height: 30px;
+}
+.gap-70{
+    width: 100%;
+    height: 70px;
+}
+
+
+
+.radio-input {
+    display: inline-block;
+    vertical-align: top;
+}
+.radio-label {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: auto;
+    color: #ffddd2;
+    font-family: "Courier New", monospace;
+}
+
+
 h1 {
+    color: #ffddd2;
+    margin-left: 20px;
+    text-align: center;
+    font-family: "Courier New", monospace;
 }
 
 p {
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    color:#edf6f9;
 }
