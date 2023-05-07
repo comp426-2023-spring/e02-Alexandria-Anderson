@@ -2,11 +2,11 @@
 // If you would like to see some examples of similar code to make an interface interact with an API, 
 // check out the coin-server example from a previous COMP 426 semester.
 // https://github.com/jdmar3/coinserver
+
 const rps = document.getElementById("rps");
 const rpsls = document.getElementById("rpsls");
 const option = document.getElementById("option");
 let timesClicked = 0;
-
 
 //function that resets selections and interface (or reloads it)
 function reset(){
@@ -50,7 +50,7 @@ function playRps(){
     document.getElementById("option-4").innerText = 'Scissors';
     document.getElementById("option-4").style.visibility = "visible";
    } else{
-    //random play
+    
    }
 }
 }
@@ -80,15 +80,29 @@ function playRpsls(){
     
 }}
 
-function play(shot){
+async function play(shot){
 
 //determined if rps or rpsls is being played
-
+const options = ["rock/", "paper/", "scissors/", "lizard/", "spock/"]
 if (document.getElementById("title") === "Rock, Paper, Scissors"){
-    //play rps
+ const endpoint = `/app/rps/play/${options[shot-1]}`
+ const url = document.baseURI.endpoint
+ await fetch(url).then(function(response){
+    
+    return response.json();
+ }).then(function(result){
+    document.getElementById("title") = Test;
+ })
 }
 
 if (document.getElementById("title") === "Rock, Paper, Scissors, Lizard, Spock"){
-    //play rpsls
+    const endpoint = `/app/rpsls/play/${options[shot-1]}`
+    const url = document.baseURI.endpoint
+    await fetch(url).then(function(response){
+       
+       return response.json();
+    }).then(function(result){
+       document.getElementById("title") = Test;
+    })
 }
 }
