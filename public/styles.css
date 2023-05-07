@@ -16,6 +16,21 @@ body {
     
 }
 
+.option-3 {
+    visibility: hidden;
+}
+
+.option-4 {
+    visibility: hidden;
+}
+
+.option-5 {
+    visibility: hidden;
+}
+
+.rules {
+    visibility: hidden;
+}
 .main button{
     background-color: #edf6f9;
     color:rgb(0, 0, 0);
