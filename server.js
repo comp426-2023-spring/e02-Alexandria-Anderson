@@ -106,9 +106,6 @@ process.on('SIGINT', () => {
     })
 })
 
-
-import pkg from "../e02-Alexandria-Anderson/lib/rpsls.js";
-const  {rps, rpsls } = pkg;
 app.use(express.json());
 
 app.use(express.urlencoded({extended: true}))
