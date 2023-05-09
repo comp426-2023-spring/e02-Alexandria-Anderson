@@ -15,7 +15,23 @@ body {
     border: none;
     
 }
-
+.result {
+    position: absolute;
+    visibility: hidden;
+    padding: 200px 200px;
+    z-index: 2;
+    margin-top: 275px;
+    margin-left: 700px;
+    background-color:#edf6f9;
+    background-color: #edf6f9;
+    color:rgb(0, 0, 0);
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 7px #043f45;
+    font-family: "Courier New", monospace;
+    font-weight: 1000;
+    border: none;
+}
 .option-3 {
     visibility: hidden;
 }
@@ -28,7 +44,10 @@ body {
     visibility: hidden;
 }
 
-.rules {
+.rules-buttons {
+    visibility: visible;
+}
+.rules{
     visibility: hidden;
 }
 .main button{
@@ -52,7 +71,7 @@ body {
     color:#edf6f9
 }
 
-.rules button {
+.rules-buttons button {
     background-color: #006d77;
     border: none;
     color:#edf6f9;
@@ -62,7 +81,7 @@ body {
     font-weight: 1000;
     
 }
-.rules button:hover {
+.rules-buttons button:hover {
     background-color: #e29578;
     color:rgb(0, 0, 0);
 }
